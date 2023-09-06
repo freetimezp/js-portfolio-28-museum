@@ -1,5 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --primary: #ffd700;
+}
+
+body {
+    position: relative;
+    background: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px; 
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav li {
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.nav li .nav-btn::after {
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: var(--primary);
+    transition: 0.5s;
+}
+
+.nav li .nav-btn:hover::after {
+    width: 50%;
+}
+
+.nav li .nav-btn:hover {
+    color: var(--primary);
+}
+
+.nav .nav-btn.active {
+    color: var(--primary);
+}
+
+.nav .nav-btn.active::after {
+    width: 50%;
+}
+
+.bag {
+    position: relative;
+    color: #fff;
+    font-size: 1.8em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bag .number {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #000;
+    font-size: 0.5em;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: none;
+    position: relative;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+

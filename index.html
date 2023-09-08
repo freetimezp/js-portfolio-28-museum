@@ -16,14 +16,14 @@
         <a href="/" class="logo">Museum</a>
         <ul class="nav">
             <li>
-                <a href="/" class="nav-btn active">
+                <a href="#" class="nav-btn active">
                     <ion-icon name="home-outline"></ion-icon>
                 </a>
             </li>
-            <li><a href="#" class="nav-btn">Exhibitions</a></li>
-            <li><a href="#" class="nav-btn">Collection</a></li>
-            <li><a href="#" class="nav-btn">Events</a></li>
-            <li><a href="#" class="nav-btn">Shop</a></li>
+            <li><a href="#exhibition" class="nav-btn" data-target="exhibition">Exhibitions</a></li>
+            <li><a href="#collection" class="nav-btn" data-target="collection">Collection</a></li>
+            <li><a href="#events" class="nav-btn" data-target="events">Events</a></li>
+            <li><a href="#shop" class="nav-btn" data-target="shop">Shop</a></li>
         </ul>
         <a href="#" class="bag">
             <ion-icon name="bag-outline"></ion-icon>
@@ -174,7 +174,14 @@
         </div>
     </div>
 
-
+    <main>
+        <section id="exhibition" class="exhibition">
+            <h1>Exhibition</h1>
+        </section>
+        <section id="collection" class="collection">collection</section>
+        <section id="events" class="events">events</section>
+        <section id="shop" class="shop">shop</section>
+    </main>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

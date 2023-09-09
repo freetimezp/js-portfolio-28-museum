@@ -379,7 +379,7 @@ section .content-btn {
     padding: 5px 20px;
 }
 
-/* axhibition start */
+/* exhibition start */
 
 .exhibition {
     background: url(../images/asian-palace.jpeg) no-repeat;
@@ -417,11 +417,130 @@ section .content-btn {
     float: left;
 }
 
-/* axhibition end */
+/* exhibition end */
+
+/* collection start */
+.collection {
+    background: url(../images/bg-2.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
+
+.collection .collection-title {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.collection .collection-title h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 9em;
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+
+.collection .collection-title::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60vh;
+    width: 25px;
+    background: radial-gradient(
+        ellipse farthest-corner at right bottom,
+        #fedb37 0%,
+        #fdb931 8%,
+        #9f7928 30%,
+        #8a6e2f 40%,
+        transparent 80%
+    ), radial-gradient(
+        ellipse farthest-corner at left top,
+        #fff 0%,
+        #ffffac 8%,
+        #d1b464 25%,
+        #5d4a1f 62.5%,
+        #5d4a1f 100%
+    );
+}
+
+.collection .arts-item {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.collection h3 {
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 2px;
+}
+
+.collection .artsSwiper {
+    overflow-y: visible;
+}
+
+.collection .artsSwiper::before {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 55vh;
+    width: 60%;
+    background: radial-gradient(
+        ellipse farthest-corner at right bottom,
+        #fedb37 0%,
+        #fdb931 8%,
+        #9f7928 30%,
+        #8a6e2f 40%,
+        transparent 80%
+    ), radial-gradient(
+        ellipse farthest-corner at left top,
+        #fff 0%,
+        #ffffac 8%,
+        #d1b464 25%,
+        #5d4a1f 62.5%,
+        #5d4a1f 100%
+    );
+}
+
+.collection .img-box {
+    position: relative;
+}
+
+.collection .arts-item .arts-img {
+    position: relative;
+    max-height: 45vh;
+    margin-right: 20px;
+    cursor: grab;
+}
+
+.collection .arts-item .arts-frame {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    max-height: 45vh;
+    transform: scale(1.02);
+}
+
+.collection .arts-description p {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 20px;
+}
 
 
-
-
+/* collection end */
 
 
 

@@ -539,9 +539,19 @@ section .content-btn {
     margin-top: 20px;
 }
 
-
 /* collection end */
 
+/* events start */
+.events img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.events img:hover {
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+}
+
+/* events end */
 
 
 

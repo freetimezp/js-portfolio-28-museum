@@ -191,7 +191,7 @@ header {
     margin-bottom: 40px;
 }
 
-.banner .content .content-btn {
+.content-btn {
     width: 200px;
     color: #fff;
     text-transform: uppercase; 
@@ -216,7 +216,8 @@ header {
     transition: all 0.5s ease-in-out;
 }
 
-.banner .content .content-btn:hover {
+.content-btn:hover {
+    color: #fff;
     background: radial-gradient(
         ellipse farthest-corner at left top,
         #fedb37 0%,
@@ -366,6 +367,60 @@ section h4 {
 section p {
     color: #ddd;
 }
+
+section .section-content {
+    position: relative;
+    z-index: 900;
+}
+
+section .content-btn {
+    width: 150px;
+    float: right;
+    padding: 5px 20px;
+}
+
+/* axhibition start */
+
+.exhibition {
+    background: url(../images/asian-palace.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.exhibition-title {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.exhibition-title h1 {
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 5px;
+    font-size: 10em;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-transform: lowercase;
+}
+
+.exhibition p {
+    font-size: 0.8em;
+    line-height: 1em;
+    letter-spacing: 1px;
+    font-weight: 200;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.exhibition .price {
+    float: left;
+}
+
+/* axhibition end */
+
+
+
 
 
 

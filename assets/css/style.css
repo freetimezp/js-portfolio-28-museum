@@ -133,6 +133,76 @@ header {
     transition: 0.5s;
 }
 
+.menu ion-icon {
+    color: #fff;
+    font-size: 1.8em;
+}
+
+.menu.active {
+    transform: rotateZ(45deg);
+}
+
+.nav-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    z-index: 990;
+    gap: 20px;
+}
+
+.nav-mobile.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-mobile li {
+    position: relative;
+    list-style: none;
+}
+
+.nav-mobile li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.nav-mobile li::before {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    height: 2px;
+    width: 50%;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.nav-mobile li:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* banner start */
+
 .banner {
     position: absolute;
     top: 0;
@@ -881,13 +951,71 @@ section .content-btn {
     display: none;
 }
 
-
-
 /* modal end */
 
+/* responsive start */
+@media (max-width: 768px) {
+    header {
+        padding: 30px;
+    }
+    .nav {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .banner {
+        padding: 120px 30px;
+    }
+    .banner .content h1 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 3em;
+        line-height: 1em;
+    }
+    .banner .content h4 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+
+    #drag-container h1 {
+        font-size: 2em;
+    }
+    main {
+        overflow-y: visible;
+    }
+    section {
+        padding: 150px 30px 50px;
+    }
+
+    .collection .collection-title {
+        display: none;
+    }
+    .collection h3 {
+        color: #fff;
+        font-weight: 300;
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+    .collection .img-box {
+        margin-right: 20px;
+    }
+    .collection .arts-description {
+        margin-top: 100px;
+    }
+    .collection .arts-description p {
+        margin-top: 10px;
+    }
+
+    .event-item {
+        margin-bottom: 3rem;
+    }
+}
 
 
-
+/* responsive end */
 
 
 

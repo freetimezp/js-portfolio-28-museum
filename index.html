@@ -29,10 +29,22 @@
             <ion-icon name="bag-outline"></ion-icon>
             <span class="number">5</span>
         </a>
-        <a href="#" class="menu">
+        <a href="#" class="menu" onclick="toggleMenu();">
             <ion-icon name="grid-outline"></ion-icon>
         </a>
     </header>
+
+    <ul class="nav-mobile">
+        <li>
+            <a href="#" class="nav-btn active">
+                <ion-icon name="home-outline"></ion-icon>
+            </a>
+        </li>
+        <li><a href="#exhibition" class="nav-btn" data-target="exhibition">Exhibitions</a></li>
+        <li><a href="#collection" class="nav-btn" data-target="collection">Collection</a></li>
+        <li><a href="#events" class="nav-btn" data-target="events">Events</a></li>
+        <li><a href="#shop" class="nav-btn" data-target="shop">Shop</a></li>
+    </ul>
 
     <div class="banner container-fluid">
         <div class="row d-flex align-items-center">
@@ -408,7 +420,7 @@
 
         <section id="events" class="events">
             <div class="section-content container-fluid">
-                <div class="row">
+                <div class="row event-item">
                     <div class="col-lg-6">
                         <img src="./assets/images/events-1.jpg" alt="events" class="img-fluid">
                     </div>
@@ -428,10 +440,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 d-flex flex-column align-items-start justify-content-center">
+                    <div class="col-lg-6 d-flex flex-column align-items-end justify-content-center">
                         <h1>Lorem ipsum dolor sit amet</h1>
                         <h4>Events Time: 27 September, 6.30pm</h4>
-                        <p>
+                        <p class="text-end">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Officiis numquam quae quidem, in consequatur praesentium,
                             soluta, libero tenetur molestiae dolorum sequi consequuntur
